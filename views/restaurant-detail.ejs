@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("includes/head") %>
+    <link rel="stylesheet" href="/styles/restaurants.css" />
+  </head>
+  <body>
+    <%- include("includes/header") %>
+    <%- include("includes/aside") %>
+    <main>
+      <div class="detail-container">
+      <div class="photo-container"></div>
+      <div class="information-container">
+        <h2><%= restaurant.name %></h2>
+      <div class="restaurant-meta">
+        <div class="detail-cuisine">
+        <img src="/images/cuisine.png" alt="cuisine">
+        <p><%= restaurant.cuisine %></p>
+        </div>
+        <div class="detail-address">
+        <img src="/images/address.png" alt="address">
+        <p><%= restaurant.address %></p>
+        </div>
+      </div>
+      <div class="detail-desc">
+      <img src="/images/desc.png" alt="description">
+      <p>
+        <%= restaurant.description %>
+      </p>
+      </div>
+      <div class="visit-button">
+      <a href="<%= restaurant.website %> ">Visit Website!</a>
+      </div>
+      </div>
+      </div>
+    </main>
+    <%- include("includes/footer") %>
+  </body>
+</html>

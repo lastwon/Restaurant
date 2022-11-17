@@ -1,0 +1,264 @@
+  main {
+    max-width: 100vw;
+  }
+  
+  #restaurants-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    list-style: none;
+    padding: 2rem;
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .detail-container {
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    background-color: rgb(225, 197, 172);
+    margin-bottom: -48px;
+  }
+
+  .gallery-image {
+    width: 100%;
+  }
+
+  .photo-container {
+    position: relative;
+    width: 50%;
+    object-fit: fill;
+  }
+
+  .photo-container img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .information-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 50%;
+  }
+
+  .information-container h2 {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 900;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .visit-button {
+    margin-top: 7rem;
+  }
+
+  .visit-button a {
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    border: 3px solid rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    color: rgba(0, 0, 0, 0.75);
+  }
+
+  .visit-button a:hover {
+    border: 3px solid #fafafa;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fafafa;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 1rem;
+  }
+
+  article img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  #restaurants-list {
+    background-color: rgb(225, 197, 172);
+    margin-bottom: 0;
+    margin-top: 1rem;
+  }
+
+  #restaurants-list li {
+    padding: 2rem 0 2rem 1rem;
+  }
+
+  .address {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .address p {
+    color: rgb(225, 197, 172);
+  }
+
+  .cuisine {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .cuisine p {
+    color: rgb(225, 197, 172);
+  }
+
+  .detail-address {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .detail-address p {
+    color: rgba(0, 0, 0, 0.75);
+  }
+
+  .detail-cuisine {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .detail-cuisine p {
+    color: rgba(0, 0, 0, 0.75);
+  }
+
+  .detail-desc {
+    display: flex;
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+
+  .detail-desc img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .detail-desc p {
+    color: rgba(0, 0, 0, 0.75);
+  }
+
+  #restaurants-list li h2 {
+    font-size: 1.7em;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  p {
+    color: rgba(0, 0, 0, 0.75);
+  }
+  
+  .restaurant-item {
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.90);
+    color: #FDF8F5;
+    overflow: visible;
+    text-align: left;
+  }
+
+  .desc {
+    display: flex;
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+
+  .desc img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .desc p {
+    color: rgb(225, 197, 172);
+  }
+
+
+  
+  .restaurant-item h2 {
+    font-family: 'Roboto Condensed', 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    margin: 0.25rem 0;
+  }
+  
+  .restaurant-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+    justify-content: space-between;
+  }
+
+  .restaurant-meta img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .restaurant-actions {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .restaurant-actions a, .btn {
+    padding: 0.5rem 1.5rem;
+    background-color: rgb(225, 197, 172);
+    border-radius: 4px;
+    color: rgba(0, 0, 0, 0.75);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+    font-weight: 900;
+    cursor: pointer;
+  }
+  
+  .restaurant-actions a:hover,
+  .restaurant-actions a:active, .btn:hover {
+    background-color: rgb(206, 167, 116);
+  }
+
+  @media (max-width: 27rem) {
+    #restaurants-list {
+      grid-template-columns: 1fr;
+      padding: 0;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+
+    .detail-container {
+      flex-direction: column;
+    }
+
+    .photo-container {
+      width: 100%;
+      height: 30vh;
+    }
+
+    .restaurant-meta {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .restaurant-meta p {
+      text-align: left;
+    }
+
+    .detail-container {
+      height: 90vh;
+    }
+
+    .information-container {
+      width: 100%;
+    }
+
+    .visit-button {
+      margin-top: 3rem;
+    }
+
+    .visit-button a{
+      font-size: 1em;
+    }
+  }

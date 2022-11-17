@@ -1,0 +1,12 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70vh;
+    background-color: rgb(225, 197, 172);
+    margin-bottom: 0;
+}
+
+p {
+    color: rgba(0, 0, 0, 0.75);
+}

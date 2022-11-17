@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("includes/head") %>
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <%- include("includes/header") %>
+    <%- include("includes/aside") %>
+    <main>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="4000">
+            <img src="/images/restaurant1.jpg" class="d-block w-100" alt="Restaurant1">
+            <div class="carousel-caption d-none d-md-block bg-dark rounded" style="--bs-bg-opacity: .8;">
+              <p>"Earn your success based on service to others, not at the expense of others"</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="4000">
+            <img src="/images/restaurant2.jpg" class="d-block w-100" alt="Restaurant2">
+            <div class="carousel-caption d-none d-md-block bg-dark rounded" style="--bs-bg-opacity: .8;">
+              <p>"Always render more and better service than is expected of you, no matter what your task may be"</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/images/restaurant3.jpg" class="d-block w-100" alt="Restaurant3">
+            <div class="carousel-caption d-none d-md-block bg-dark rounded" style="--bs-bg-opacity: .8;">
+              <p>".. consists in giving, and in serving others"</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <section class="first-section">
+        <div class="first">
+          <div>
+            <h2>Know great restaurant?</h2>
+            <p class="paragraph">Been in a great restaurant, or you wanna recommend it to others? It's a great place to share or discover new restaurants all over the world!</p>
+            <a href="/recommend">Share a Restaurant!</a>
+          </div>
+        </div>
+          <div class="second">
+            <img src="/images/foto1.jpg" alt="">
+        </div>
+      </section>
+      <section class="second-section">
+        <div class="third">
+            <img src="/images/foto2.jpg" alt="">
+        </div>
+          <div class="fourth">
+            <h2>Can't find Restaurant?</h2>
+            <p class="paragraph2">Check it out, our list of restaurants! List refreshing all the time. </p>
+            <a href="/restaurants">Browse Restaurants!</a>
+        </div>
+      </section>
+      <section class="third-section">
+        <div class="fifth" id="about">
+          <div>
+            <h2>About Us!</h2>
+            <p class="paragraph">Our organisation is helping people find / share new places, locations and websites of restaurants to able to taste new flavors everyday!</p>
+            <a href="/about">More...!</a>
+          </div>
+        </div>
+          <div class="sixth">
+            <img src="/images/foto3.jpg" alt="">
+        </div>
+      </section>
+      <section class="fourth-section">
+        <h2>Share best Restaurants in the world!</h2>
+        <h2>Enjoy the <span class="restaurante">Restaurante</span> experience</h2>
+      </section>
+      <%- include("includes/footer") %>
+    </main>
+  </body>
+</html>
