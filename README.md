@@ -5,7 +5,7 @@ The Restaurant Page project is a web application where users can preview a list 
 ## Features
 
 - Restaurant List: Users can view a list of restaurants, including information such as the name, cuisine type, and location.
-- Restaurant Details: Clicking on a restaurant in the list displays more details about that specific restaurant, including the address, contact information, and user reviews.
+- Restaurant Details: Clicking on a restaurant in the list displays more details about that specific restaurant, including the address.
 - Share a Favorite Restaurant: Users can share their favorite restaurants with others by submitting the restaurant details through a form. The shared data is saved to a JSON file and can be viewed by other users.
 - Restaurant Images: The application utilizes the Unsplash API to fetch high-quality images of the restaurants, providing a visually appealing experience for users while browsing the restaurant list and details.
 - Bootstrap Carousel: The homepage of the application features a carousel of images using Bootstrap, showcasing enticing visuals of different restaurants.
